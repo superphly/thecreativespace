@@ -1,0 +1,25 @@
+---
+layout: default
+title: Residents
+permalink: /residents/
+---
+<article class="page">
+  <h1>Residents</h1>
+  {% assign groups = "Current,Adjunct,Alumnus" | split: "," %}
+  {% for group in groups %}
+  {% assign members = site.residents | where_exp: "r", "r.affiliation contains group" | sort: "title" %}
+  {% if members.size > 0 %}
+  <h2>{{ group }}</h2>
+  <div class="people-grid">
+    {% for r in members %}
+    <a class="person" href="{{ r.url | relative_url }}">
+      {% if r.photo %}<img src="{{ r.photo | relative_url }}" alt="{{ r.title }}">{% endif %}
+      <span>{{ r.title }}</span>
+      {% assign subtitle = r.fields["Be Page Subtitle"] %}
+      {% if subtitle %}<small>{{ subtitle }}</small>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% endfor %}
+</article>

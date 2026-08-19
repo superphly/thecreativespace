@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<article class="page profile">
+  <header class="profile-header">
+    {% if page.photo %}<img class="profile-photo" src="{{ page.photo | relative_url }}" alt="{{ page.title }}">{% endif %}
+    <div>
+      <h1>{{ page.title }}</h1>
+      {% assign subtitle = page.fields["Be Page Subtitle"] %}
+      {% if subtitle %}<p class="profile-role">{{ subtitle }}</p>{% endif %}
+      {% if page.affiliation %}<p class="profile-badge">{{ page.affiliation | join: ", " }}</p>{% endif %}
+    </div>
+  </header>
+  {% assign body = content | strip %}
+  {% if body != "" %}{{ content }}{% elsif page.excerpt %}<p>{{ page.excerpt }}</p>{% endif %}
+  <p class="backlink"><a href="{{ '/residents/' | relative_url }}">&larr; All residents</a></p>
+</article>

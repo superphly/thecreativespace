@@ -1,0 +1,39 @@
+title: The Creative Space
+tagline: Coworking in Downtown Bryan, Texas
+description: >-
+  The Creative Space is a coworking office in Downtown Bryan, Texas —
+  a shared office with cafe culture for developers, designers, writers,
+  and independents.
+url: "https://thecreativespace.org"
+
+permalink: pretty
+
+collections:
+  residents:
+    output: true
+    permalink: /residents/:name/
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: residents
+    values:
+      layout: resident
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

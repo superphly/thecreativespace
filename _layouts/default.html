@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.url != "/" %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="{{ '/' | relative_url }}">The Creative&nbsp;Space</a>
+      <nav class="site-nav">
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/residents/' | relative_url }}">Residents</a>
+        <a href="{{ '/projects/' | relative_url }}">Projects</a>
+        <a href="{{ '/collaborations/' | relative_url }}">Collaborations</a>
+        <a href="{{ '/location/' | relative_url }}">Location</a>
+        <a href="{{ '/join/' | relative_url }}">Join</a>
+        <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>The Creative Space · 216 W. 26th St., Bryan, TX 77803 · <a href="mailto:info@thecreativespace.org">info@thecreativespace.org</a></p>
+      <p class="archive-note">Restored from the original site as it stood in February 2012.</p>
+    </div>
+  </footer>
+</body>
+</html>

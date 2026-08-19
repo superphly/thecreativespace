@@ -1,0 +1,45 @@
+---
+layout: default
+title: Welcome
+---
+<section class="hero">
+  <h1>A coworking office in Downtown&nbsp;Bryan</h1>
+  <p>Coworking is cafe-like community/collaboration space for developers, designers, writers and independents. Or, it&rsquo;s like this: start with a shared office and add cafe culture, which is the opposite of most modern cafes.</p>
+  <p>If you are a telecommuter, freelancer, or entrepreneur this might be the place for you. <a class="cta" href="{{ '/join/' | relative_url }}">Join us</a></p>
+</section>
+
+<section class="home-section">
+  <h2>Highlights</h2>
+  <div class="card-grid">
+    {% for item in site.data.highlights %}
+    <div class="card">
+      <h3>{{ item.title }}</h3>
+      {% if item.text %}<p>{{ item.text }}</p>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="home-section">
+  <h2>Current residents</h2>
+  <div class="people-grid">
+    {% assign current = site.residents | where_exp: "r", "r.affiliation contains 'Current'" | sort: "title" %}
+    {% for r in current %}
+    <a class="person" href="{{ r.url | relative_url }}">
+      {% if r.photo %}<img src="{{ r.photo | relative_url }}" alt="{{ r.title }}">{% endif %}
+      <span>{{ r.title }}</span>
+    </a>
+    {% endfor %}
+  </div>
+  <p><a href="{{ '/residents/' | relative_url }}">Meet everyone &rarr;</a></p>
+</section>
+
+<section class="home-section">
+  <h2>Projects from the Space</h2>
+  <ul class="project-list">
+    {% assign projects = site.projects | sort: "title" %}
+    {% for p in projects %}
+    <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>

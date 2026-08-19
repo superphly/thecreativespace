@@ -1,0 +1,18 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+<article class="page">
+  <h1>Projects</h1>
+  <p>Ventures, events, and communities that grew out of the Creative Space.</p>
+  <div class="card-grid">
+    {% assign projects = site.projects | sort: "title" %}
+    {% for p in projects %}
+    <a class="card card-link" href="{{ p.url | relative_url }}">
+      {% if p.photo %}<img class="card-logo" src="{{ p.photo | relative_url }}" alt="{{ p.title }}">{% endif %}
+      <h3>{{ p.title }}</h3>
+    </a>
+    {% endfor %}
+  </div>
+</article>
