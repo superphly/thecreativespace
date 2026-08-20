@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="page profile">
   <header class="profile-header">
-    {% if page.photo %}<img class="profile-photo" src="{{ page.photo | relative_url }}" alt="{{ page.title }}">{% endif %}
+    <img class="profile-photo" src="{{ page.photo | default: '/assets/img/placeholder-artist.svg' | relative_url }}" alt="{{ page.title }}">
     <div>
       <h1>{{ page.title }}</h1>
       {% assign subtitle = page.fields["Be Page Subtitle"] %}

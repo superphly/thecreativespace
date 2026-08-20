@@ -15,7 +15,7 @@
 
 body {
   margin: 0;
-  background: url("../img/bg-body.jpg") center -50px no-repeat var(--paper);
+  background: url("../img/bg-paper.jpg") center -50px no-repeat var(--paper);
   color: var(--ink);
   font: 15px/1.7 Arial, Helvetica, sans-serif;
 }
@@ -74,6 +74,7 @@ img { max-width: 100%; height: auto; }
   border: 1px solid var(--rule);
   padding: 32px 36px 40px;
   min-height: 420px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.13);
 }
 
 /* ── People (residents) — grid with the red affiliation ribbon ── */
@@ -217,18 +218,6 @@ hr { border: none; border-top: 1px solid var(--rule); margin: 32px 0; }
   .inner-card { padding: 20px 18px 28px; }
   .profile-header { flex-direction: column; }
   .project-list { columns: 1; }
-}
-
-.thumb-blank {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 1;
-  background: var(--paper);
-  border: 1px solid var(--rule);
-  color: #bbb;
-  font-size: 48px;
-  font-weight: bold;
 }
 
 /* ── Closure banner ── */

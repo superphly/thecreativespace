@@ -21,17 +21,17 @@ title: Welcome
 </section>
 
 <section class="home-section">
-  <h2>Current residents</h2>
+  <h2>Residents</h2>
   <div class="people-grid">
-    {% assign current = site.residents | where_exp: "r", "r.affiliation contains 'Current'" | sort: "title" %}
+    {% assign current = site.residents | sort: "title" %}
     {% for r in current %}
     <a class="person" href="{{ r.url | relative_url }}">
-      <span class="thumb">{% if r.photo %}<img src="{{ r.photo | relative_url }}" alt="{{ r.title }}">{% else %}<span class="thumb-blank">{{ r.title | slice: 0 }}</span>{% endif %}</span>
+      <span class="thumb"><img src="{{ r.photo | default: '/assets/img/placeholder-artist.svg' | relative_url }}" alt="{{ r.title }}"></span>
       <span>{{ r.title }}</span>
     </a>
     {% endfor %}
   </div>
-  <p><a href="{{ '/residents/' | relative_url }}">Meet everyone &rarr;</a></p>
+  
 </section>
 
 <section class="home-section">

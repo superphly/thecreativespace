@@ -2,12 +2,12 @@
 title: "Stephen Sargent"
 slug: "stephen-sargent"
 type:
-  - "Adjunct"
+  - "Alumnus"
 date: "2012-02-18 02:19:05"
 modified: "2012-02-19 04:18:16"
 author: "Cody Marx Bailey"
 affiliation:
-  - "Adjunct"
+  - "Alumnus"
 fields:
   Aktt Notify Twitter: "yes"
   Be Page Subtitle: "Organizer/Poet"

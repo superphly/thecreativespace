@@ -2,12 +2,12 @@
 title: "Dean Brundage"
 slug: "dean-brundage"
 type:
-  - "Current"
+  - "Alumnus"
 date: "2012-02-18 01:45:04"
 modified: "2012-02-18 05:39:40"
 author: "Cody Marx Bailey"
 affiliation:
-  - "Adjunct"
+  - "Alumnus"
 fields:
   Aktt Notify Twitter: "yes"
   Be Page Subtitle: "iPhone/Software Developer"

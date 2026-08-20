@@ -2,12 +2,12 @@
 title: "Bronius  Motekaitis"
 slug: "bronius-motekaitis"
 type:
-  - "Current"
+  - "Alumnus"
 date: "2012-02-18 02:20:35"
 modified: "2012-02-19 04:27:21"
 author: "Cody Marx Bailey"
 affiliation:
-  - "Current"
+  - "Alumnus"
 fields:
   Aktt Notify Twitter: "yes"
   Be Page Subtitle: "Drupal Programmer"

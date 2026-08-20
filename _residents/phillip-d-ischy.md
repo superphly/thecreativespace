@@ -2,12 +2,12 @@
 title: "Phillip D. Ischy"
 slug: "phillip-d-ischy"
 type:
-  - "Adjunct"
+  - "Alumnus"
 date: "2012-02-18 02:24:16"
 modified: "2012-02-19 04:29:28"
 author: "Cody Marx Bailey"
 affiliation:
-  - "Adjunct"
+  - "Alumnus"
 fields:
   Aktt Notify Twitter: "yes"
   Be Page Subtitle: "Poet & Writer"

@@ -2,12 +2,12 @@
 title: "Jacob Asbil"
 slug: "jacob-asbil"
 type:
-  - "Adjunct"
+  - "Alumnus"
 date: "2012-02-18 02:19:20"
 modified: "2012-02-19 04:28:58"
 author: "Cody Marx Bailey"
 affiliation:
-  - "Adjunct"
+  - "Alumnus"
 fields:
   Aktt Notify Twitter: "yes"
   Be Page Subtitle: "Musician/Organizer"

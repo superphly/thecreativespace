@@ -2,12 +2,12 @@
 title: "Chris Bratlien"
 slug: "chris-bratlien"
 type:
-  - "Adjunct"
+  - "Alumnus"
 date: "2012-02-18 01:42:55"
 modified: "2012-02-19 04:17:17"
 author: "Cody Marx Bailey"
 affiliation:
-  - "Adjunct"
+  - "Alumnus"
   - "Alumnus"
 fields:
   Aktt Notify Twitter: "yes"
