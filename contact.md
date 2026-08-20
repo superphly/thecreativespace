@@ -11,4 +11,4 @@ wordpress_id: 10
 original_url: "http://thecreativespace.org/contact/"
 ---
 
-For more information about the creative space, contact us via email at: [info@thecreativespace.org](mailto:info@thecreativespace.org)
+For more information about the creative space, contact us via email at: [superphly@gmail.com](mailto:superphly@gmail.com)
