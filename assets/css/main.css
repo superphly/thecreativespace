@@ -230,3 +230,12 @@ hr { border: none; border-top: 1px solid var(--rule); margin: 32px 0; }
   font-size: 48px;
   font-weight: bold;
 }
+
+/* ── Closure banner ── */
+.closure-banner {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  padding: 8px 16px;
+}
