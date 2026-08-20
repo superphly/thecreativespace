@@ -13,7 +13,10 @@ permalink: /residents/
   <div class="people-grid">
     {% for r in members %}
     <a class="person" href="{{ r.url | relative_url }}">
-      {% if r.photo %}<img src="{{ r.photo | relative_url }}" alt="{{ r.title }}">{% endif %}
+      <span class="thumb">
+        {% if r.photo %}<img src="{{ r.photo | relative_url }}" alt="{{ r.title }}">{% else %}<span class="thumb-blank">{{ r.title | slice: 0 }}</span>{% endif %}
+        <span class="affiliation">{{ group }}</span>
+      </span>
       <span>{{ r.title }}</span>
       {% assign subtitle = r.fields["Be Page Subtitle"] %}
       {% if subtitle %}<small>{{ subtitle }}</small>{% endif %}
