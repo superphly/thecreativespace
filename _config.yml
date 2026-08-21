@@ -34,6 +34,11 @@ defaults:
 
 exclude:
   - README.md
+  - "_residents/README.md"
+  - "_projects/README.md"
+  - "_data/README.md"
+  - "assets/README.md"
+  - "media/README.md"
   - Gemfile
   - Gemfile.lock
   - vendor
